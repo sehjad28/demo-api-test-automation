@@ -31,7 +31,7 @@
         </repository>
         <repository>
             <id>github</id>
-            <url>https://public:&#103;hp_vYZmBQKehcUCJ56RmABeAdAc42A9oZ2cY30V@maven.pkg.github.com/sampadrout/api-automation-framework</url>
+            <url>https://public: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@maven.pkg.github.com/sampadrout/api-automation-framework</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
