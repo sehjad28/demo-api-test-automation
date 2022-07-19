@@ -45,7 +45,7 @@ pipeline
     {
        always
        {
-        cucumber jsonReportDirectory: 'agent-e2e-test/target/surefire-reports',fileIncludePattern: '**/*.json'
+        cucumber jsonReportDirectory: 'e2e_tests/target/surefire-reports',fileIncludePattern: '**/*.json'
        }
     }
 }
