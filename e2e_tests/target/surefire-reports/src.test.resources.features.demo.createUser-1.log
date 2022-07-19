@@ -1,0 +1,45 @@
+18:05:17.621 [print] {"gender":"male","name":"Karma KirlinAuto","email":"randal.waelchi@gmail.com","status":"active"}
+18:05:18.382 request:
+1 > POST https://gorest.co.in/public/v2/users
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 3f2167d98cceaa2dc908d5f5824da9dd6d1e388639795a8125386eb6a0baf0d3
+1 > Connection: Keep-Alive
+1 > Content-Length: 96
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: gorest.co.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_202)
+{"gender":"male","name":"Karma KirlinAuto","email":"randal.waelchi@gmail.com","status":"active"}
+
+18:05:19.510 response time in milliseconds: 1125.58
+1 < 201
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 72d37e331b5b71c8-LHR
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 19 Jul 2022 12:34:44 GMT
+1 < ETag: W/"917a2729b94943af201d17daf318de1a"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Location: https://gorest.co.in/public/v2/users/4901
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=OoigWYTFCHTjPrpKUJucbqduf%2BHoa%2BJnnEPBiwxefh6t%2BHMsoQydIq47apL%2FR6%2BtD%2Bb3fVWH2Cltr1Q8R75YA%2FbFpVuCRkmleUr1F9BvUGPp5SMM7joylCrTKfvtbVY%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-RateLimit-Limit: 90
+1 < X-RateLimit-Remaining: 89
+1 < X-RateLimit-Reset: 1
+1 < X-Request-Id: fc6374c4-e845-44bd-be8b-907fcff69b05
+1 < X-Runtime: 0.027390
+1 < X-XSS-Protection: 0
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"id":4901,"name":"Karma KirlinAuto","email":"randal.waelchi@gmail.com","gender":"male","status":"active"}
+
+18:05:19.516 [print] 4901
+8 [print] 4899

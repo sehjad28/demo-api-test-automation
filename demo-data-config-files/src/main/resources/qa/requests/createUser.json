@@ -1,0 +1,7 @@
+{
+  "name": "${fullname}",
+  "gender": "male",
+  "email": "${email}",
+  "status": "active"
+
+}

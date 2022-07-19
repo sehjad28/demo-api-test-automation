@@ -1,0 +1,15 @@
+<testsuite failures="0" name="src/test/resources/features/demo/createUser.feature" skipped="0" tests="1" time="2.166839">
+  <testcase classname="src.test.resources.features.demo.createUser" name="Create User" time="2.166839">
+    <system-out>* url karate.properties['baseURL'] ........................................ passed
+* def functions = call read('classpath:karate-config.js') ................. passed
+* def request_file_path =  searchFileAndReturnContent('createUser.json') .. passed
+* def create_user_request = generateRequest(request_file_path) ............ passed
+* print create_user_request ............................................... passed
+Given path karate.properties['createuserpath'] ............................ passed
+And headers getmyheaders() ................................................ passed
+And request create_user_request ........................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* print response.id ....................................................... passed</system-out>
+  </testcase>
+</testsuite>

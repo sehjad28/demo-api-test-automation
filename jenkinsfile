@@ -1,0 +1,51 @@
+pipeline
+{
+    agent any
+    tools{ maven 'Maven' }
+    stages
+    {
+        stage('Build') {
+            steps {
+                   script{
+                          currentBuild.displayName = "Test Build"
+                   }
+                sh "mvn clean package -DskipTests"
+            }
+        }
+
+        stage('PositiveTest')
+        {
+            steps
+            {
+                script
+               {
+                    try
+                    {
+                        echo 'agent Positive Scenarios..'
+                        dir('e2e_tests')
+                        {
+                            script
+                            {
+                                sh "mvn -Denvironment=qa -Dtest=PositiveScenario test"
+                            }
+                        }
+                    }
+                    catch (err) {
+                        echo "Positive Tests failed, continuing..."
+                        echo err.getMessage()
+                        catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                            sh "exit 1"
+                        }
+                    }
+                }
+            }
+        }
+    }
+    post
+    {
+       always
+       {
+        cucumber jsonReportDirectory: 'agent-e2e-test/target/surefire-reports',fileIncludePattern: '**/*.json'
+       }
+    }
+}
