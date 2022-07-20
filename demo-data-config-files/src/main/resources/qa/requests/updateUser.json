@@ -1,0 +1,5 @@
+{
+  "name": "${fullname}",
+  "gender": "male",
+  "status": "<status>"
+}
